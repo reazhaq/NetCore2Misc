@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreApiOne", "NetCoreApiOne\NetCoreApiOne.csproj", "{2A6FC711-C6CA-4E5B-9B8B-2EA7BDDA888D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreApiOne", "NetCoreApiOne\NetCoreApiOne.csproj", "{2A6FC711-C6CA-4E5B-9B8B-2EA7BDDA888D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreApiOneTests", "NetCoreApiOneTests\NetCoreApiOneTests.csproj", "{11E4FEBA-9505-42AA-A22E-1F8FC740A0E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreApiOneTests", "NetCoreApiOneTests\NetCoreApiOneTests.csproj", "{11E4FEBA-9505-42AA-A22E-1F8FC740A0E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SomeLibrary", "SomeLibrary\SomeLibrary.csproj", "{16FB092B-A2D5-4831-AECA-6966F9495443}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SomeLibraryTests", "SomeLibraryTests\SomeLibraryTests.csproj", "{B9CE923E-8207-4C09-B3B7-35849F282518}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{11E4FEBA-9505-42AA-A22E-1F8FC740A0E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11E4FEBA-9505-42AA-A22E-1F8FC740A0E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11E4FEBA-9505-42AA-A22E-1F8FC740A0E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16FB092B-A2D5-4831-AECA-6966F9495443}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16FB092B-A2D5-4831-AECA-6966F9495443}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16FB092B-A2D5-4831-AECA-6966F9495443}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16FB092B-A2D5-4831-AECA-6966F9495443}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9CE923E-8207-4C09-B3B7-35849F282518}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9CE923E-8207-4C09-B3B7-35849F282518}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9CE923E-8207-4C09-B3B7-35849F282518}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9CE923E-8207-4C09-B3B7-35849F282518}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

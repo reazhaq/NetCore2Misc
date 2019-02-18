@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using SomeLibrary;
 
 namespace NetCoreApiOne
 {
@@ -39,6 +40,9 @@ namespace NetCoreApiOne
             // Supports ASP.Net Core DI abstractions
             services.AddMvc();
             //services.AddLogging();
+            services.AddHealthChecks()
+                .AddCheck<SomeLibraryHealthCheck>("Some_library_health_check")
+                ;
         
             // Also exposes Lamar specific registrations
             // and functionality
@@ -46,6 +50,7 @@ namespace NetCoreApiOne
             {
                 s.TheCallingAssembly();
                 s.WithDefaultConventions();
+                s.AssembliesAndExecutablesFromApplicationBaseDirectory();
             });
         }
 
@@ -58,6 +63,7 @@ namespace NetCoreApiOne
             }
 
             app.UseMvc();
+            app.UseHealthChecks("/api/health");
         }
     }
 }
